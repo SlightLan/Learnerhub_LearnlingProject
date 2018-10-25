@@ -1,0 +1,14 @@
+<h1>Projects#index</h1>
+<p>Find me in app/views/projects/index.html.erb</p>
+<table>
+	<tr>
+		<td><b>Project name</b></td>
+		<td><b>Project description</b></td>
+	</tr>
+	<% @projects_list.each do |f| %>
+	  <tr>
+	    <td><%= f.name %></td>
+	    <td><%= f.description %></td>
+	  </tr>
+	<% end %>
+</table>
